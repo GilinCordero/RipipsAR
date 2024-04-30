@@ -11,6 +11,7 @@ function ArScene({ SA, SceneId }) {
 
 
   const [returnedData, setReturnedData] = useState([]);
+  // const [addData, setAddData] = useState([]);
   const [modelData, setModelData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -54,7 +55,14 @@ function ArScene({ SA, SceneId }) {
     }
   }, [SA, SceneId]);
   
- 
+  // const addToScene = async(addData) => {
+  //   try{
+  //     const response = await axios.post("http://localhost:5000/server", addData);
+  //     console.log("data: ", addData, " added correctly" )
+  //   } catch (error) {
+  //     console.error("Error adding models data:", error);
+  //   }     
+  // }
 
 
   return (
